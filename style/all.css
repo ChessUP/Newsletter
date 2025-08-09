@@ -10,6 +10,7 @@
 
 :root {
 --Red: hsl(4, 100%, 67%);
+--lightRed: hsl(7, 41%, 92%);
 
 --Blue800: hsl(234, 29%, 20%);
 --Blue700: hsl(235, 18%, 26%);
@@ -26,6 +27,7 @@
 
 main {
     display: flex;
+    position: relative;
     flex-direction: column;
     /* max-width: 100%; */
     min-height: 100vh;
@@ -36,13 +38,19 @@ img {
 }
 
 .illustration {
-   height: 100%;
+   /* height: 12em; */
+   /* height: 32vh; */
+   height: clamp(10em, 32vh, 20em);
+   width: 100%;
+   object-fit: cover;
+   border-radius: 0 0 12px 12px;
 }
 
 h1 {
     font-family: 'roboto-Regular';
     font-weight: 700;
     font-size: clamp(1.7em, 10vw, 3em);
+    /* color: ; */
     margin: .7em;
     margin-bottom: .2em;
 }
@@ -50,47 +58,41 @@ h1 {
 p {
     font-family: 'roboto-Regular';
     font-weight: 400;
-    font-size: clamp(.9em, 5vw - .5em, 1.2em);
-    /* font-size: .9em; */
-    margin: clamp(.7em, 7vw - 1.5em, 3em);/*Colocar espaçamento certo para a menor tela*/
-    /* margin-right: 1em; */
+    font-size: clamp(.7em, 2.2vh, 3.5em);
+    margin: clamp(.7em, 1.9vh, 2em);
     margin-left: 2em;
     margin-right: 2em;
-
-    
-    
-}
-
-.checklist{
-    margin-bottom: -2em;
+ 
 }
 
 .checklist > p {
     display: flex;
+    
 }
 
 .checklist > p > img {
-    /* width: 1.8em; */
     width: clamp(1em, 5vw, 2.8em);
     margin-right: 1em;
     
 }
 
 .forms {
-    margin-top: auto;
+    margin-top: 1vh;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
 }
 
-input[type="email"] {
+.forms > p {
+    font-size: clamp(1em, 1.8vh, 2.5em);
+    margin-left: 7vw;
+}
+/* input[type="email"] */ 
+#email{
     width: 88vw;
-    /* height: 4em; */
     padding: 1em;
     border-radius: 0.5em;
     border: 1px solid var(--Grey);
@@ -98,6 +100,10 @@ input[type="email"] {
     font-weight: 100;
     cursor: pointer;
 }
+
+/* input[type="email"]:focus {
+    background-color: green;
+} */
 
 input[type="submit"] {
    width: 88vw;
@@ -112,9 +118,53 @@ input[type="submit"] {
    cursor: pointer;
 }
 
+.error {
+    display: none;
+}
 
-
+.error > p {
+    color: var(--Red);
+    float: right;
+    font-size: clamp(.8em, 1.2vh, 2.2em);
+}
 
 .messagem-success {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    
+    position: absolute;
+    background-color: var(--White);
+    min-height: 100vh;
 }
+
+
+.messagem-success > h1 {
+    margin-left: 1em;
+}
+
+.messagem-success > p{
+    margin-left: 1.5em;
+}
+
+.messagem-success > img {
+    align-self: flex-start;
+    margin-top: 18vh;
+    margin-left: 2em;
+}
+
+.messagem-success > button {
+    width: 90%;
+    height: 3em;
+    background-color: var(--Blue800);
+    color: var(--White);
+    font-family: 'roboto-Regular';
+    border: none;
+    border-radius: 0.5em;
+
+    margin-top: auto;
+    margin-bottom: 2em;
+    
+}
+
+/*Color o rodapé e fazer a interface para outros dispositivos*/
