@@ -17,6 +17,12 @@
 --Grey: hsl(0, 0%,58%);
 --White: hsl(0, 0%, 100%);
 
+/*Cor Button*/
+
+--pink: rgb(255, 83, 121);
+--orange: rgb(255, 105, 62);
+
+
 }
 
 * {
@@ -52,14 +58,14 @@ h1 {
     font-size: clamp(1.7em, 10vw, 3em);
     /* color: ; */
     margin: .7em;
-    margin-bottom: .2em;
+    margin-bottom: .1em;
 }
 
 p {
     font-family: 'roboto-Regular';
     font-weight: 400;
     font-size: clamp(.7em, 2.2vh, 3.5em);
-    margin: clamp(.7em, 1.9vh, 2em);
+    margin: clamp(.6em, 1.5vh, 2em);
     margin-left: 2em;
     margin-right: 2em;
  
@@ -101,10 +107,6 @@ form {
     cursor: pointer;
 }
 
-/* input[type="email"]:focus {
-    background-color: green;
-} */
-
 input[type="submit"] {
    width: 88vw;
    height: 3em;
@@ -117,6 +119,11 @@ input[type="submit"] {
    font-weight: 400;
    cursor: pointer;
 }
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, var(--pink), var(--orange));
+}
+
 
 .error {
     display: none;
@@ -161,10 +168,22 @@ input[type="submit"] {
     font-family: 'roboto-Regular';
     border: none;
     border-radius: 0.5em;
+    cursor: pointer;
 
     margin-top: auto;
     margin-bottom: 2em;
     
 }
 
-/*Color o rodapé e fazer a interface para outros dispositivos*/
+button:hover {
+    background-image: linear-gradient(to right, var(--pink), var(--orange));
+}
+
+.attribution {
+    margin-top: -1.7em;
+    font-size: clamp(.5em, 1.8vh, 3.5em);
+    text-align: center;
+}
+/*Colocar cores nas fontes*/
+
+/*fazer a interface para outros dispositivos*/

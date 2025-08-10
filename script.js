@@ -18,8 +18,7 @@ function validador() {
         messagem.style.display = 'flex';
     }
 
-} 
+}
+
 
 form.addEventListener('submit', defult);
-
-//Fazer o botão "Liberar mensagem" funcionar
