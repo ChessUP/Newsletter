@@ -1,189 +1,62 @@
-@font-face {
-    font-family: 'roboto-Bold';
-    src: url(../assets/fonts/Roboto-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'roboto-Regular';
-    src: url(../assets/fonts/Roboto-Regular.ttf);
-}
-
-:root {
---Red: hsl(4, 100%, 67%);
---lightRed: hsl(7, 41%, 92%);
-
---Blue800: hsl(234, 29%, 20%);
---Blue700: hsl(235, 18%, 26%);
---Grey: hsl(0, 0%,58%);
---White: hsl(0, 0%, 100%);
-
-/*Cor Button*/
-
---pink: rgb(255, 83, 121);
---orange: rgb(255, 105, 62);
-
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    /* max-width: 100%; */
-    min-height: 100vh;
-}
-
-img {
-    max-width: 100%;
-}
-
-.illustration {
-   /* height: 12em; */
-   /* height: 32vh; */
-   height: clamp(10em, 32vh, 20em);
-   width: 100%;
-   object-fit: cover;
-   border-radius: 0 0 12px 12px;
-}
-
-h1 {
-    font-family: 'roboto-Regular';
-    font-weight: 700;
-    font-size: clamp(1.7em, 10vw, 3em);
-    /* color: ; */
-    margin: .7em;
-    margin-bottom: .1em;
-}
-
-p {
-    font-family: 'roboto-Regular';
-    font-weight: 400;
-    font-size: clamp(.7em, 2.2vh, 3.5em);
-    margin: clamp(.6em, 1.5vh, 2em);
-    margin-left: 2em;
-    margin-right: 2em;
- 
-}
-
-.checklist > p {
-    display: flex;
+@media screen and (min-width: 768px) {
+    body {
+        background-color: brown;
+    }
     
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 75vw;
+        height: 70vh;
+        margin: 10vh auto;
+        /* align-items: center; */
+        /* justify-content: center; */
+
+        background-color: bisque;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        /* flex: 1; */
+    }
+
+    picture {
+        display: flex;
+        align-items: center;
+    }
+
+    .illustration {
+        /* display: block; */
+        height: 25em;
+        width: 75%;
+        /* margin-top: 5em; */
+        /* border-radius: 15px; */
+        /* padding-right: 2vh; */
+        object-fit: cover;
+        
+        /*Pocisionar a imagem corretamente, perguntar ao claude, colocando a imagem de referencia e os códigos*/
+    }
+
+
+    h1 {
+
+    }
+
+    .checklist {
+        /* margin-top: auto; */
+    }
+
+    .forms {
+        /* align-self: flex-end; */
+    }
+
+    #email {
+        width: 2em;
+    }
+
+    input[type="submit"] {
+        width: 2em;
+    }
 }
-
-.checklist > p > img {
-    width: clamp(1em, 5vw, 2.8em);
-    margin-right: 1em;
-    
-}
-
-.forms {
-    margin-top: 1vh;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.forms > p {
-    font-size: clamp(1em, 1.8vh, 2.5em);
-    margin-left: 7vw;
-}
-/* input[type="email"] */ 
-#email{
-    width: 88vw;
-    padding: 1em;
-    border-radius: 0.5em;
-    border: 1px solid var(--Grey);
-    font-family: 'roboto-Regular';
-    font-weight: 100;
-    cursor: pointer;
-}
-
-input[type="submit"] {
-   width: 88vw;
-   height: 3em;
-   margin-top: 1em;
-   border-radius: 0.5em;
-   border: none;
-   background-color: var(--Blue800);
-   color: var(--White);
-   font-family: 'roboto-Regular';
-   font-weight: 400;
-   cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-image: linear-gradient(to right, var(--pink), var(--orange));
-}
-
-
-.error {
-    display: none;
-}
-
-.error > p {
-    color: var(--Red);
-    float: right;
-    font-size: clamp(.8em, 1.2vh, 2.2em);
-}
-
-.messagem-success {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    
-    position: absolute;
-    background-color: var(--White);
-    min-height: 100vh;
-}
-
-
-.messagem-success > h1 {
-    margin-left: 1em;
-}
-
-.messagem-success > p{
-    margin-left: 1.5em;
-}
-
-.messagem-success > img {
-    align-self: flex-start;
-    margin-top: 18vh;
-    margin-left: 2em;
-}
-
-.messagem-success > button {
-    width: 90%;
-    height: 3em;
-    background-color: var(--Blue800);
-    color: var(--White);
-    font-family: 'roboto-Regular';
-    border: none;
-    border-radius: 0.5em;
-    cursor: pointer;
-
-    margin-top: auto;
-    margin-bottom: 2em;
-    
-}
-
-button:hover {
-    background-image: linear-gradient(to right, var(--pink), var(--orange));
-}
-
-.attribution {
-    margin-top: -1.7em;
-    font-size: clamp(.5em, 1.8vh, 3.5em);
-    text-align: center;
-}
-/*Colocar cores nas fontes*/
-
-/*fazer a interface para outros dispositivos*/
