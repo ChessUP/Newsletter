@@ -1,62 +1,87 @@
 @media screen and (min-width: 768px) {
     body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        min-width: 100vw;
         background-color: brown;
     }
     
     main {
         display: flex;
         flex-direction: row-reverse;
-        width: 75vw;
+        align-items: center;
+        width: 85%;
         height: 70vh;
-        margin: 10vh auto;
-        /* align-items: center; */
-        /* justify-content: center; */
-
+        border-radius: 25px;
         background-color: bisque;
     }
 
     .container {
-        display: flex;
-        flex-direction: column;
-
-        /* flex: 1; */
+        margin-right: 7vw;
+        margin-left: 4vw;
+        margin-top: 1em;
     }
 
     picture {
         display: flex;
         align-items: center;
+        margin-right: 1em;
     }
 
+   
     .illustration {
-        /* display: block; */
-        height: 25em;
-        width: 75%;
-        /* margin-top: 5em; */
-        /* border-radius: 15px; */
-        /* padding-right: 2vh; */
+        height: clamp(10em, 65vh, 27em);
+        border-radius: 15px 15px 15px 15px;
+        width: 98%;
         object-fit: cover;
-        
-        /*Pocisionar a imagem corretamente, perguntar ao claude, colocando a imagem de referencia e os códigos*/
-    }
-
-
-    h1 {
-
     }
 
     .checklist {
-        /* margin-top: auto; */
+        margin-top: 2em;
+        margin-bottom: 2em;
+        /*Alterar a posição da imagem da lista*/
     }
 
-    .forms {
-        /* align-self: flex-end; */
+    .checklist > p > img {
+        top: 0em;
+    }
+
+    .forms > p {
+        margin-left: 1vw;
     }
 
     #email {
-        width: 2em;
+        width: 45vw;
     }
 
     input[type="submit"] {
-        width: 2em;
+        width: 45vw;
+        margin-bottom: 4em;
+    }
+
+    .error > p {
+        margin: 0;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .success {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .messagem-success {
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* margin: auto; */
+        width: 50vw;
+        height: 60vh;
+
     }
 }

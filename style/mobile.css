@@ -35,7 +35,6 @@ main {
     display: flex;
     position: relative;
     flex-direction: column;
-    /* max-width: 100%; */
     height: 100vh;
 }
 
@@ -44,8 +43,6 @@ img {
 }
 
 .illustration {
-   /* height: 12em; */
-   /* height: 32vh; */
    height: clamp(10em, 32vh, 20em);
    width: 100%;
    object-fit: cover;
@@ -55,7 +52,7 @@ img {
 h1 {
     font-family: 'roboto-Regular';
     font-weight: 700;
-    font-size: clamp(1.7em, 10vw, 3em);
+    font-size: clamp(1.7em, 10vw, 2.7em);
     /* color: ; */
     margin: .7em;
     margin-bottom: .1em;
@@ -64,7 +61,7 @@ h1 {
 p {
     font-family: 'roboto-Regular';
     font-weight: 400;
-    font-size: clamp(.7em, 2.2vh, 3.5em);
+    font-size: clamp(.7em, 2vh, 3.5em);
     margin: clamp(.6em, 1.5vh, 2em);
     margin-left: 2em;
     margin-right: 2em;
@@ -73,13 +70,16 @@ p {
 
 .checklist > p {
     display: flex;
+    margin-top: clamp(1em, 2vh, 2.5em);
     
 }
 
 .checklist > p > img {
-    width: clamp(1em, 5vw, 2.8em);
+    width: clamp(1.5em, 2vw, 3em);
     margin-right: 1em;
-    
+
+    position: relative;
+    top: -.5em;
 }
 
 .forms {
@@ -133,6 +133,7 @@ input[type="submit"]:hover {
     color: var(--Red);
     float: right;
     font-size: clamp(.8em, 1.2vh, 2.2em);
+    margin-bottom: 0;
 }
 
 .messagem-success {
@@ -142,7 +143,7 @@ input[type="submit"]:hover {
     
     position: absolute;
     background-color: var(--White);
-    min-height: 100vh;
+    height: 100vh;
 }
 
 

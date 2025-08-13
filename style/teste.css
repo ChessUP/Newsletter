@@ -1,0 +1,92 @@
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1000px;
+        height: 600px;
+        margin: 0;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4px;
+        padding-right: 60px;
+    }
+
+    picture {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+    }
+
+    .illustration {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .checklist {
+        margin: 2rem 0;
+    }
+
+    .forms {
+        margin-top: 2rem;
+    }
+
+    .forms>p {
+        font-size: 0.9rem;
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    #email {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 0;
+    }
+
+    .error>p {
+        float: right;
+        font-size: 0.8rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .messagem-success {
+        max-width: 500px;
+        margin: 5vh auto;
+        padding: 3rem;
+        border-radius: 20px;
+    }
+
+}
