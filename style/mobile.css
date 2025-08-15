@@ -72,8 +72,8 @@ h1 {
 p {
     font-family: 'roboto-Regular';
     font-weight: 400;
-    font-size: clamp(.7em, 2vh, 3.5em);
-    margin: clamp(.6em, 1.5vh, 2em);
+    font-size: clamp(.6em, 1.7vh, 3.5em);
+    margin: clamp(.6em, 1vh, 2em);
     margin-left: 2em;
     margin-right: 2em;
  

@@ -26,8 +26,8 @@
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
-            width: 60%;
-            height: 70vh;
+            width: 65%;
+            height: 65%;
             border-radius: 25px;
             background-color: var(--White);
         }
@@ -46,7 +46,7 @@
 
 
         .illustration {
-            height: clamp(10em, 65vh, 37em);
+            height: clamp(10em, 60vh, 37em);
             width: 98%;
             border-radius: 15px 15px 15px 15px;
             object-fit: cover;
