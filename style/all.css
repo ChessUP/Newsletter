@@ -70,6 +70,10 @@
             margin-bottom: 4em;
         }
 
+        label {
+            margin-left: 0vw;
+        }
+
         .error {
             margin: 0;
         }
@@ -108,5 +112,16 @@
 
         .attribution {
             color: var(--lightRed);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        main {
+            width: 57%;;
+            height: 60%;
+        }
+
+        .illustration {
+            height: clamp(10em, 55vh, 37em);
         }
     }
