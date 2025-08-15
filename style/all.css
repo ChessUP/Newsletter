@@ -1,87 +1,112 @@
 @media screen and (min-width: 768px) {
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        min-width: 100vw;
-        background-color: brown;
-    }
-    
-    main {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        width: 85%;
-        height: 70vh;
-        border-radius: 25px;
-        background-color: bisque;
+    :root {
+        --Red: hsl(4, 100%, 67%);
+        --lightRed: hsl(7, 41%, 92%);
+
+        --Blue800: hsl(234, 29%, 20%);
+        --Blue700: hsl(235, 18%, 26%);
+        --Grey: hsl(0, 0%, 58%);
+        --White: hsl(0, 0%, 100%);
+
+        /*Cor Button*/
+        --pink: rgb(255, 83, 121);
+        --orange: rgb(255, 105, 62);
     }
 
-    .container {
-        margin-right: 7vw;
-        margin-left: 4vw;
-        margin-top: 1em;
-    }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            min-width: 100vw;
+            background-color: var(--Blue800);
+        }
 
-    picture {
-        display: flex;
-        align-items: center;
-        margin-right: 1em;
-    }
+        main {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            width: 60%;
+            height: 70vh;
+            border-radius: 25px;
+            background-color: var(--White);
+        }
 
-   
-    .illustration {
-        height: clamp(10em, 65vh, 27em);
-        border-radius: 15px 15px 15px 15px;
-        width: 98%;
-        object-fit: cover;
-    }
+        .container {
+            margin-right: 1vw;
+            margin-left: 1vw;
+            margin-top: 1em;
+        }
 
-    .checklist {
-        margin-top: 2em;
-        margin-bottom: 2em;
-        /*Alterar a posição da imagem da lista*/
-    }
+        picture {
+            display: flex;
+            align-items: center;
+            margin-right: 1em;
+        }
 
-    .checklist > p > img {
-        top: 0em;
-    }
 
-    .forms > p {
-        margin-left: 1vw;
-    }
+        .illustration {
+            height: clamp(10em, 65vh, 27em);
+            border-radius: 15px 15px 15px 15px;
+            width: 98%;
+            object-fit: cover;
+        }
 
-    #email {
-        width: 45vw;
-    }
+        .checklist {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
 
-    input[type="submit"] {
-        width: 45vw;
-        margin-bottom: 4em;
-    }
+        .checklist>p>img {
+            top: 0em;
+        }
 
-    .error > p {
-        margin: 0;
-    }
+        #email {
+            width: 30vw;
+        }
 
-    footer {
-        display: none;
-    }
+        input[type="submit"] {
+            width: 30vw;
+            margin-bottom: 4em;
+        }
 
-    .success {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        .error {
+            margin: 0;
+        }
 
-    .messagem-success {
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* margin: auto; */
-        width: 50vw;
-        height: 60vh;
+        .success {
+            display: none;   
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
 
+            z-index: 7;
+        }
+
+        .messagem-success {
+            width: 26em;
+            height: 27em;
+            padding: 2em;
+            border-radius: 30px;
+        }
+
+        .messagem-success > img {
+            margin-top: 0em;
+        }
+
+        .backcolor {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: var(--Blue800);
+            z-index: 5;
+        }
+
+        .attribution {
+            color: var(--lightRed);
+        }
     }
-}
